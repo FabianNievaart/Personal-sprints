@@ -1,0 +1,33 @@
+{
+  "name": "personal-sprints",
+  "version": "1.0.0",
+  "description": "Personal sprints at Competa IT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabianNievaart/Personal-sprints.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FabianNievaart/Personal-sprints/issues"
+  },
+  "homepage": "https://github.com/FabianNievaart/Personal-sprints#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-qunit": "^2.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "dependencies": {
+    "load-grunt-config": "^0.19.2",
+    "load-grunt-configs": "^1.0.0"
+  }
+}

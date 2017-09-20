@@ -1,0 +1,14 @@
+default:
+  - 'sass'
+  - 'cssmin'
+  - 'watch'
+
+test:
+  - 'jshint'
+  - 'qunit'
+
+build:
+  - 'jshint'
+  - 'qunit'
+  - 'concat'
+  - 'uglify'
