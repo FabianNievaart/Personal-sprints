@@ -1,0 +1,10 @@
+@mixin block($color){
+	width: 45%;
+	height: 400px;
+	background-color: $color;
+}
+
+@mixin flex{
+	display: -webkit-flex;
+	display: flex;
+}

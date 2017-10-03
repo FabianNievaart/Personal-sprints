@@ -1,0 +1,118 @@
+body{
+	background-color: #fff;
+	margin: 0;
+	font-family: Arial;
+}
+header{
+	@include flex;
+	padding: 10px 0 0 10px;
+	background-color: $darkgray;
+	width: 85%;
+	height: 600px;
+}
+.text{
+	&--light {
+		color: $lightgray;
+	}
+	&--dark{
+		color: $darkgray;
+	}
+}
+.headline{
+	@include flex;
+	padding: 40px 0 0 100px;
+	flex-direction: column;
+	&__logo {
+		height: 70px;
+		width: 250px;
+		border: 4px solid $lightgray;
+		margin: 50px 0 100px 0;
+	}
+	&__title {
+		font-size: 60px;
+	}
+	&__subtitle{
+		font-size: 30px;
+		line-height: 1%;
+	}
+}
+.navigation {
+	background-color: $gray;
+	height: 450px;
+	width: 300px;
+	margin-top: 70px;
+	position: relative;
+	left: 48%;
+	&__list {
+		list-style-type: none;
+	}
+	&__item {
+		font-size: 50px;
+		margin: 15% 20%;
+	}
+	&__link {
+		text-decoration: none;
+	}
+}
+
+.introduction{
+	width: 85%;
+	margin: auto;
+	&__title{
+		text-align: center;
+		font-size: 50px;
+		color: $darkgray;
+	}
+	&__container{
+		@include flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__row{
+		@include flex;
+		justify-content: space-between;
+	}
+	&__img{
+		@include block($lightgray);
+
+		&--left{
+
+		}
+	}
+	&__text-container{
+		@include block($white);
+		padding-bottom: 100px;
+
+		&--right{
+
+		}
+	}
+	&__line{
+
+		&--right {
+
+		}
+	}
+	&__dot{
+
+		&--right{
+
+		}
+	}
+	&__p-head{
+		color: $darkgray;
+		font-size: 50px;
+		margin: 0;
+
+		&--right{
+
+		}
+	}
+	&__paragraph{
+		text-align: justify;
+		color: $darkgray;
+		font-size: 30px;
+
+	}
+}
