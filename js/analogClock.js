@@ -1,3 +1,5 @@
+var quotenum = 0;
+var i = 0;
 var canvas = document.getElementsByClassName('canvas')[0];
 var ctx = canvas.getContext("2d");
 var radius = canvas.height / 2;
@@ -19,15 +21,19 @@ var quote = [
 	"I will keep smiling, be positive and never give up! I will give 100 percent each time I play. These are always my goals and my attitude. </br>-Yani Tseng",
 	"The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time. <br>-Mark Twain",
 	"Patriotism is supporting your country all the time, and your government when it deserves it. </br>-Mark Twain",
-	"Time is more value than money. You can get more money, but you cannot get more time. </br>-Jim Rohn",
+	"Time has more value than money. You can get more money, but you cannot get more time. </br>-Jim Rohn",
 	"When someone shows you who they are, believe them the first time. </br>-Maya Angelou",
 	"My dream is of a place and a time where America will once again be seen as the last best hope of earth. </br>-Abraham Lincoln",
-	"It's time to d-d-d-d-d-d-d-duel! </br>-Yugi Muto"
+	"It's time to d-d-d-d-d-d-d-duel! </br>-Yugi Muto",
+	"If you put your mind to it, you can accomplish anything. </br>-Dr E. Brown",
+	"Liever lui dan moe. </br>-Nievaart",
+	"S'avonds een vent, s'ochtends absent</br>-Stefan Appel",
+	"The right man in the wrong place can make all the difference in the world. </br>-G-man"
 ];
 ctx.translate(radius, radius);
 radius = radius * 0.99;
 setInterval(drawClock, 0);
-setInterval(getTime, 0);
+setInterval(getTime, 1000);
 halfHour();
 
 
@@ -152,6 +158,13 @@ function getTime() {
 }
 
 function halfHour() {
-	num = Math.floor(Math.random() * 20);
-	document.getElementsByClassName("quote")[0].innerHTML = quote[num];
+	quotenum = Math.floor(Math.random() * quote.length);
+
+	if (quotenum !== i){
+		document.getElementsByClassName("quote")[0].innerHTML = quote[quotenum];
+		i = quotenum;
+	}
+	else {
+		halfHour();
+	}
 }

@@ -1,8 +1,12 @@
 
-// Helpers
-@import 'helpers/_mixins';
-@import 'helpers/_variables';
+// Abstracts
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+// Layouts
+@import 'layouts/content';
 
 // Pages
-@import 'pages/_wireframe';
-@import 'pages/_clock';
+@import 'pages/wireframe';
+@import 'pages/clock';
+@import 'pages/scroll';

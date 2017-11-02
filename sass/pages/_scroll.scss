@@ -1,0 +1,23 @@
+.content--scroll{
+	align-items: flex-start;
+}
+.image{
+	margin-top: 400px;
+	margin-left: -200px;
+	animation-direction: alternate;
+	animation-play-state: paused;
+	animation-duration:	2s;
+	animation-iteration-count: infinite;
+	animation-name: image;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes image{
+	from{
+		margin-left: -200px;
+	}
+	to{
+		margin-left: 400px;
+	}
+}
