@@ -1,4 +1,5 @@
-/*// Stays
+// Stays
+/*
 function scroll() {
 	var y = document.documentElement.scrollTop;
 	console.log(y);
@@ -17,14 +18,14 @@ function scroll() {
 	console.log(shown);
 	if (y >= 300 && y <= 500 && shown === false){
 		document.getElementsByClassName("image")[0].style.animationPlayState = "running";
-		setTimeout(pauseShown,2000);
+		setTimeout(pauseShown,800);
 	}
 	else if (y >= 300 && y <= 500 && shown === true){
 		document.getElementsByClassName("image")[0].style.animationPlayState = "paused";
 	}
 	else if (y < 300 && shown === true || y > 500 && shown === true){
 		document.getElementsByClassName("image")[0].style.animationPlayState = "running";
-		setTimeout(pauseHidden,2000);
+		setTimeout(pauseHidden,800);
 	}
 	else if (y < 300 && shown === false || y > 500 && shown === false){
 		document.getElementsByClassName("image")[0].style.animationPlayState = "paused";
