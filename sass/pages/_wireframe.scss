@@ -1,9 +1,9 @@
-body{
+.reset{
 	background-color: #fff;
 	margin: 0;
 	font-family: Arial;
 }
-header{
+.header{
 	@include flex;
 	padding: 10px 0 0 10px;
 	background-color: $darkgray;
